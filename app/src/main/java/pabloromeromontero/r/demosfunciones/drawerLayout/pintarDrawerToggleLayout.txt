@@ -1,0 +1,12 @@
+https://stackoverflow.com/questions/31626488/change-the-color-of-navigation-drawer-indicator-icon
+
+
+
+Try creating this style in your styles.xml.
+
+<style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+    <item name="color">@android:color/white</item>
+</style>
+And, then add it to you AppTheme style like the following.
+
+<item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
